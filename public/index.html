@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!--FontAwesome-->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -18,49 +18,98 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400"|Poppins" rel="stylesheet">
 
 
-	<link href="css/app.css">
+	<link rel="stylesheet" href="css/app.css">
 
 </head>
 <body>
-	
-	<div class="twitter container-fluid">
+	<div class="main container-fluid">
 		<div class="row">
-			<div class="col-md-6">
-				<h1> Acá va el form</h1>
-				
+			<!--//columna izquierda-->
+			<div class="sidebar-iz col-md-3">
+				<div class="sidebar__perfil">
+					<h5> Nataly Medina</h5>
+					<p>@NatiMedina</p>
+					<ul>
+						<li>Tweets<br> 5 </li>
+						<li>Siguiendo<br> 39</li>
+						<li>Seguidores<br>2</li>
+					</ul>
+				</div>
+				<div class="sidebar__form">
+					<h5> ¿Qué esta pasando?</h5>
+					<form class="sidebar__form--tweet">
+						<textarea class="sidebar__form--cajadetexto" name="comentarios" rows="10" cols="40"></textarea>
+						<input class="button__twitter" type="submit" name="crear tweet"></input>
+					</form>
+					
+				</div>
 			</div>
-			<div class="col-md-6">
-				<h1> Acá van los twitts</h1>
-				<
-				
+			<!--//columna central-->
+			<div class="main-central col-md-6">
+				<div class="main__row row col-md 12">
+					<div class="main__tweet ">
+						<div class="main__tweet--pin">
+							<i class="fas fa-times"></i>
+						</div>
+						<h3> Nataly Medina</h3>
+						<h4>@NatiMedina</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum laborum nostrum non. Optio magni dolor, fugiat hic numquam voluptas. Repellat autem ipsum explicabo dolores modi facilis cumque, distinctio doloribus iure!</p>
+						<div class="main__tweet--features">
+							<a class="main__like main__like--red href=# ">
+								<i class="fas fa-heart"></i>
+							</a>
+							
+						</div>
+					</div>
+				</div>
 			</div>
+
+					
+
+			</div>
+
+			<!--//columna derecha-->
+			<div class="col-md-3">
+				<h3> Acá va el form</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum laborum nostrum non. Optio magni dolor, fugiat hic numquam voluptas. Repellat autem ipsum explicabo dolores modi facilis cumque, distinctio doloribus iure!</p>
+				<h4> Escribe tu mensaje</h4>
+				<form>
+					<textarea></textarea>
+					<input type="submit" name="crear tweet"></input>
+				</form>
+
+
+			</div>
+			
 			
 		</div>
 		
 	</div>
-
-
-
-
-
-
-
-
-
-
-
 	
+</div>
 
-	
-	<!-- SCRIPTS-->
-	<script
-	src="https://code.jquery.com/jquery-3.3.1.min.js"
-	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-	crossorigin="anonymous"></script>
 
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<!--JavaScripts-->
-	<script src="js/app.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- SCRIPTS-->
+<script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!--JavaScripts-->
+<script src="js/app.js"></script>
 </body>
 </html>
