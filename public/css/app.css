@@ -7,12 +7,59 @@ h4 {
   display: inline;
 }
 
+hr {
+  margin: 5px 0 5px 0;
+}
+
+a {
+  font-size: 0.9em;
+}
+
+.navbar-default .navbar-nav li a {
+  color: #66757f;
+  font-weight: bold;
+}
+
+.navbar {
+  height: 50px;
+}
+
+.navbar-brand {
+  color: #4AB3F4 !important;
+  font-size: 28px;
+  margin-left: 250px !important;
+  padding-top: 5px;
+}
+
+.perfil--foto--navbar {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: solid 3px #f1f1f1;
+  margin-right: 10px;
+}
+
 .button__twitter {
   background-color: #4AB3F4;
   border-radius: 30px;
   padding: 0.5rem 2rem;
   color: white;
   border: none;
+}
+
+.button__twitter--seguir {
+  background-color: #ffffff;
+  border-radius: 30px;
+  padding: 0.1rem 2rem;
+  color: #4AB3F4;
+  border: 1px solid #4AB3F4;
+  margin-left: 5px;
+}
+
+.sidebar__form--search {
+  border-radius: 15px;
+  border: 1px solid #4AB3F4;
+  margin: 5px 10px 0 0;
 }
 
 .sidebar__iz {
@@ -24,6 +71,7 @@ h4 {
 }
 
 .sidebar__perfil--portada {
+  background-image: url(https://i.pinimg.com/564x/10/c5/6a/10c56a46c14324b6501066672f4ebb89.jpg);
   background-color: red;
   background-size: cover;
   height: 7em;
@@ -133,7 +181,21 @@ h4 {
   float: rigth;
 }
 
-.strike {
-  text-decoration: line-through;
+.sidebar__seguidores {
+  background-color: white;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.perfil--foto--seguidores {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: solid 3px #f1f1f1;
+  margin-right: 5px;
+}
+
+.sidebar__seguidores--empresa {
+  padding: 5px;
 }
 

@@ -22,93 +22,192 @@
 
 </head>
 <body>
-	<div class="main container-fluid">
-		<div class="row">
-			<!--//columna izquierda-->
-			<div class="sidebar__iz col-md-3">
-				<div class="sidebar__perfil">
-					
-					<div class="sidebar__perfil--portada">
-						<div class="sidebar__perfil--foto">
-							<!-- <img class="perfil--foto" src=""> -->
-							
-							<img  class="perfil--foto" id="imgSalida" width="10%" height="100%"  />
 
-							<input sidebar__perfil--foto name="file-input" id="file-input" type="file"/>
-							<label for="file-input">Cambia tu foto de perfil </label>
+	<!-- Header -->
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">
+						<i class="fas fa-home"></i>Inicio <span class="sr-only">(current)</span></a></li>
+						<li><a href="#">Notificaciones</a></li>
+						<li><a href="#">Mensajes</a></li>
+					</ul>
+					<form class="navbar-form navbar-left">
+						<div class="form-group">
 						</div>
-					</div>
-					<div class="sidebar__perfil--info">
-						<div class="sidebar__perfil--datos">
-							<h5> Nataly Medina</h5>
-							<h5>@Natinu</h5>
-							<ul>
-								<li>Tweets<br> 5 </li>
-								<li>Siguiendo<br> 39</li>
-								<li>Seguidores<br>2</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="sidebar__form">
-					<h5> ¿Qué esta pasando?</h5>
-					<form class="sidebar__form--tweet">
-						<textarea class="sidebar__form--cajadetexto" name="comentarios" rows="10" cols="40"></textarea>
-
-
-						<input class="button__twitter" type="submit" name="crear tweet"></input>
 					</form>
-					
-				</div>
-			</div>
-			<!--//columna central-->
-			<div class="main__central col-md-6">
-				
-				<div class="main__tweet">
-					<div class="main__tweet--pin">
-						<i class="fas fa-times"></i>
-					</div>
-					<h4 class="usuario"> Nataly Medina</h4>
-					<h4 class="usuario"> @Natinu</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum laborum nostrum non. Optio magni dolor, fugiat hic numquam voluptas. Repellat autem ipsum explicabo dolores modi facilis cumque, distinctio doloribus iure!</p>
-					<div class="main__tweet--features">
-						<a class="main__like href= # ">
-							<i class="fas fa-heart"></i>
+					<div class= "navbar-form navbar-central">
+						<a class="navbar-brand" href="#">
+							<i class="fab fa-twitter"></i>
 						</a>
-						<div class="main__contador">
-							<label id="contador--like">0</label>
+					</div>
+					<ul class="nav navbar-nav navbar-right">
+						<li><input type="text" class="sidebar__form--search"  placeholder="Search"></li>
+
+						<li><img class=perfil--foto--navbar src="images/ministerio.jpeg"></li>
+
+						<li><input class="button__twitter" type="submit" name="crear tweet"></input></li>
+
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+
+
+
+
+
+
+
+
+
+		<div class="main container-fluid">
+			<div class="row">
+				<!--//columna izquierda-->
+				<div class="sidebar__iz col-md-3">
+					<div class="sidebar__perfil"> 
+
+						<div class="sidebar__perfil--portada">
+							<div class="sidebar__perfil--foto">
+				
+								<img  class="perfil--foto" id="imgSalida" width="10%" height="100%"  />
+
+								<input sidebar__perfil--foto name="file-input" id="file-input" type="file"/>
+								<label for="file-input">Cambia tu foto de perfil </label>
+							</div>
+						</div>
+						<div class="sidebar__perfil--info">
+							<div class="sidebar__perfil--datos">
+								<h5> Nataly Medina</h5>
+								<h5>@Natinu</h5>
+								<ul>
+									<li>Tweets<br> 5 </li>
+									<li>Siguiendo<br> 39</li>
+									<li>Seguidores<br>2</li>
+								</ul>
+							</div>
 						</div>
 
 					</div>
+					<div class="sidebar__form">
+						<h5> ¿Qué esta pasando?</h5>
+						<form class="sidebar__form--tweet">
+							<textarea class="sidebar__form--cajadetexto" name="comentarios" rows="10" cols="40"></textarea>
+
+
+							<input class="button__twitter" type="submit" name="crear tweet"></input>
+						</form>
+
+					</div>
 				</div>
-				
-			</div>
+				<!--//columna central-->
+				<div class="main__central col-md-6">
+
+					<div class="main__tweet">
+						<div class="main__tweet--pin">
+							<i class="fas fa-times"></i>
+						</div>
+						<h4 class="usuario"> Nataly Medina</h4>
+						<h4 class="usuario"> @Natinu</h4>
+						<p>Repellat autem ipsum explicabo dolores modi facilis cumque, distinctio doloribus iure!</p>
+						<div class="main__tweet--features">
+							<a class="main__like href= # ">
+								<i class="fas fa-heart"></i>
+							</a>
+							<div class="main__contador">
+								<label id="contador--like">0</label>
+							</div>
+						</div>
+					</div>
+					<div class="main__tweet">
+						<div class="main__tweet--pin">
+							<i class="fas fa-times"></i>
+						</div>
+						<h4 class="usuario"> Nataly Medina</h4>
+						<h4 class="usuario"> @Natinu</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum laborum nostrum non. Optio magni dolor, fugiat hic numquam voluptas. Repellat autem ipsum explicabo dolores modi facilis cumque, distinctio doloribus iure!</p>
+						<div class="main__tweet--features">
+							<a class="main__like href= # ">
+								<i class="fas fa-heart"></i>
+							</a>
+							<div class="main__contador">
+								<label id="contador--like">0</label>
+							</div>
+						</div>
+					</div>
+				</div>
 
 
+				<!--//columna derecha-->
+
+				<div class="sidebar__der col-md-3">
+					<div class="sidebar__seguidores">
+						<h4> A quién seguir</h4>
+						
+						<div class="sidebar__seguidores--empresa">
+							<img class=perfil--foto--seguidores src="images/bhp.jpeg">
+							<h5>BHP</h5>
+							<input class="button__twitter--seguir" type="submit" name="crear tweet"></input>
+							<hr>
+						</div>
+						<div class="sidebar__seguidores--empresa">
+							<img class=perfil--foto--seguidores src="images/canal13.jpeg">
+							<h5>CANAL 13</h5>
+							<input class="button__twitter--seguir" type="submit" name="crear tweet"></input>
+							<hr>
+						</div>
+						<div class="sidebar__seguidores--empresa">
+							<img class=perfil--foto--seguidores src="images/ministerio.jpeg">
+							<h5>MINISTERIO</h5>
+							<input class="button__twitter--seguir" type="submit" name="crear tweet"></input>
+							<hr>
+						</div>
+						<div class="sidebar__seguidores--empresa">
+							<img class=perfil--foto--seguidores src="images/bienvenidos.jpeg">
+							<h5>BIENVENIDOS</h5>
+							<input class="button__twitter--seguir" type="submit" name="crear tweet"></input>
+							<hr>
+						</div>
+						<p> © 2018 Twitter 
+							<a href="#">Sobre nosotros</a>
+							<a href="#">Centro de Ayuda</a>
+							<a href="#">Condiciones</a>
+							<a href="#">Política de privacidad</a>
+							<a href="#">Cookies</a>
+							<a href="#">Información sobre anuncios</a>
+							<a href="#">Marca</a>
+							<a href="#">Blog</a>
+							<a href="#">Estado</a>
+							<a href="#">Aplicaciones</a>
+							<a href="#">Empleos</a>
+							<a href="#">Anunciarse</a>
+							<a href="#">Marketing</a>
+							<a href="#">Empresas</a>
+						</p>
+					</div>
 
 
+				</div>
+
+			</div>			
 
 
 
 		</div>
-
-		<!--//columna derecha-->
-		<div class="col-md-3">
-			<h3> Acá va el form</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum laborum nostrum non. Optio magni dolor, fugiat hic numquam voluptas. Repellat autem ipsum explicabo dolores modi facilis cumque, distinctio doloribus iure!</p>
-			<h4> Escribe tu mensaje</h4>
-			<form>
-				<textarea></textarea>
-				<input class="prueba "type="submit" name="crear tweet"></input>
-			</form>
-
-
-		</div>
-
 
 	</div>
-
-</div>
 
 </div>
 

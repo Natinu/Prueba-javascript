@@ -45,8 +45,9 @@ $(".main__central").on('click', '.main__like', function(e){
 
 // Contador (HACER DELEGACION)
 
+
 var contador = 0;
- $('.main__like').click(function(){ 
+ $('.main__central').on('click', '.main__like', function(e){ 
        
     if (contador < 1 ) { /*Cambiar el >= 0 por < 10 si quieres limitar el incremento*/
             contador++;
@@ -55,6 +56,21 @@ var contador = 0;
         }
  document.getElementById("contador--like").innerHTML = contador;
  })
+
+
+
+
+/* var contador = 0;
+ $('.main__like').click(function(){ 
+       
+    if (contador < 1 ) { /*Cambiar el >= 0 por < 10 si quieres limitar el incremento
+            contador++;
+        } else if (contador = contador++) {
+            contador = 0;
+        }
+ document.getElementById("contador--like").innerHTML = contador;
+ })
+ */
 
 // Cargar imágen
 
