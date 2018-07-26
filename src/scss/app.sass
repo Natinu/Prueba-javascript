@@ -1,6 +1,9 @@
 body
 	background-color: #e6ecf0
 
+h5, h4
+	display: inline
+
 .button__twitter
 	background-color: #4AB3F4
 	border-radius: 30px
@@ -10,7 +13,28 @@ body
 	clear
 
 //Sidebar izquierdo
+.sidebar__iz
+	margin-top: 10px
 .sidebar__perfil
+	position: relative
+
+.sidebar__perfil--portada
+	background-color: red
+	background-size: cover
+	height: 7em
+
+.sidebar__perfil--foto
+	padding: 75px 0 0 10px
+
+.perfil--foto
+	width: 80px
+	height: 80px
+	border-radius: 100%
+	border: solid 3px #f1f1f1
+	background-image: url(https://assets.trome.pe/files/ec_article_multimedia_gallery/uploads/2018/04/17/5ad609d27c1a7.jpeg)
+		
+
+.sidebar__perfil--info
 	background-color: #ffffff
 	padding: 10px
 	overflow: hidden
@@ -20,7 +44,19 @@ body
 		li
 			float: left
 			padding: 10px
-			list-style: none;
+			list-style: none
+.sidebar__perfil--datos
+	margin-top: 75px
+	font-weight: bold
+
+#file-input 
+	width: 0.1px
+	height: 0.1px
+	opacity: 0
+	overflow: hidden
+	position: absolute
+	z-index: -1
+	
 
 .sidebar__form
 	background-color: #E8F5FD
@@ -35,8 +71,9 @@ body
 		width: 100%
 		height: 4em
 
+
 //Columna Central
-.main-central
+.main__central
 	//
 	.main__tweet
 		background-color: white
@@ -45,6 +82,20 @@ body
 		.main__tweet--pin
 			color: #86827c
 			float: right
+
+.main__tweet--features
+	//
+	.main__like
+		color: grey
+	.main__like--red
+		color: red
+
+.main__contador
+	display: inline
+.usuario h4
+	font-size: 18px
+	font-weight: bold
+
 
 .post
 	background-color: red
@@ -60,6 +111,9 @@ body
 	width: 30px
 	height: 30px
 	float: rigth
+
+.strike
+	text-decoration: line-through
 
 
 
