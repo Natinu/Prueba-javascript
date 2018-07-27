@@ -1,29 +1,29 @@
 $(document).ready(function(){
 	$(".sidebar__form").on('submit', function(e){
+		var user = $(".sidebar__form--cajausuario").val();
 		var text = $(".sidebar__form--cajadetexto").val();
-		var usuario = $(".usuario").text();
 		var contador = $("#contador--like").text();
 
 		event.preventDefault();
-		$(".main__central").append(
-			'<div class="main__tweet row col-md 12">'
+		$(".main__central").prepend(
+			'<div class="main__tweet">'
 			+'<div class="main__tweet--pin">'
 			+'<i class="fas fa-times"></i>'
 			+'</div>'
-			+ usuario 
-			+ "<br/>"
-			+ text
+			+'<div class="usuario">'
+			+ user
+			+ '</div>'
+			+ text 
 			+'<div class="main__tweet--features">'
 			+'<a class="main__like href= # ">'
-			+'<i class="fas fa-heart"></i>'
+			+'<i class="fas fa-heart"></i>'  + ' ' 
 			+'</a>'
-			+'<div class="main__contador">'
-			+'<label id="contador--like"> 0 </label>'
+			+'<div class="main__contador">0</label>'
 			+'</div>'
 			+'</div>'
 			+'</div>'
 			+'</div>')
-		$(".sidebar__form--cajadetexto").var('');
+		$(".sidebar__form--cajadetexto").val('');
 		$(".sidebar__form--cajadetexto").focus();
 		e.preventDefault();
 
@@ -39,38 +39,20 @@ $(".main__central").on('click', '.main__tweet--pin', function(e){
 // Like corazón
 $(".main__central").on('click', '.main__like', function(e){
 	e.stopPropagation();
-		$(this).toggleClass('main__like--red');
+		$(this).addClass('main__like--red');
 });
 
 
 // Contador (HACER DELEGACION)
-
-
 var contador = 0;
  $('.main__central').on('click', '.main__like', function(e){ 
+    var contador = $(this).siblings().text();
+    contador = parseInt(contador);
+    contador = contador + 1;
+    console.log(contador);
        
-    if (contador < 1 ) { /*Cambiar el >= 0 por < 10 si quieres limitar el incremento*/
-            contador++;
-        } else if (contador = contador++) {
-            contador = 0;
-        }
- document.getElementById("contador--like").innerHTML = contador;
- })
-
-
-
-
-/* var contador = 0;
- $('.main__like').click(function(){ 
-       
-    if (contador < 1 ) { /*Cambiar el >= 0 por < 10 si quieres limitar el incremento
-            contador++;
-        } else if (contador = contador++) {
-            contador = 0;
-        }
- document.getElementById("contador--like").innerHTML = contador;
- })
- */
+ 	$(this).siblings().text(contador);
+ });
 
 // Cargar imágen
 

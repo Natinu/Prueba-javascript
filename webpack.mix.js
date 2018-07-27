@@ -5,5 +5,7 @@ mix
 	.setPublicPath('public/')
 	.setResourceRoot('../')
 	.js('src/js/app.js', 'public/js') // Toma lo que está en src/js/app.js, lo compila y el resultado quedará en la carpeta public/js/
-	.sass('src/scss/app.sass', 'public/css'); // Toma el archivo SASSS (.scss) que está en src/scss/app.scss, lo compila y lo deja en public/css/app.css
+	.sass('src/scss/app.sass', 'public/css')
+	.copy('src/images', 'public/images')
+	.options({ processCssUrls: false }); // Toma el archivo SASSS (.scss) que está en src/scss/app.scss, lo compila y lo deja en public/css/app.css
 

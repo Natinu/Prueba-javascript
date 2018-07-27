@@ -58,7 +58,7 @@
 
 						<li><img class=perfil--foto--navbar src="images/ministerio.jpeg"></li>
 
-						<li><input class="button__twitter" type="submit" name="crear tweet"></input></li>
+						<li><input class="button__twitter" type="submit" name="crear tweet" value="Twittear"></input></li>
 
 					</ul>
 				</div><!-- /.navbar-collapse -->
@@ -84,7 +84,7 @@
 				
 								<img  class="perfil--foto" id="imgSalida" width="10%" height="100%"  />
 
-								<input sidebar__perfil--foto name="file-input" id="file-input" type="file"/>
+								<input name="file-input" id="file-input" type="file"/>
 								<label for="file-input">Cambia tu foto de perfil </label>
 							</div>
 						</div>
@@ -102,12 +102,14 @@
 
 					</div>
 					<div class="sidebar__form">
+						<h5> Usuario</h5>
+						<form class="sidebar__form--tweet">
+							<textarea class="sidebar__form--cajausuario" name="comentarios" rows="10" cols="40"></textarea>
+						</form>
 						<h5> ¿Qué esta pasando?</h5>
 						<form class="sidebar__form--tweet">
 							<textarea class="sidebar__form--cajadetexto" name="comentarios" rows="10" cols="40"></textarea>
-
-
-							<input class="button__twitter" type="submit" name="crear tweet"></input>
+						<input class="button__twitter" type="submit" name="crear tweet" value="Twittear">
 						</form>
 
 					</div>
@@ -119,8 +121,7 @@
 						<div class="main__tweet--pin">
 							<i class="fas fa-times"></i>
 						</div>
-						<h4 class="usuario"> Nataly Medina</h4>
-						<h4 class="usuario"> @Natinu</h4>
+						<div class="titulo-user"><h4 class="usuario"> Nataly Medina @Natinu</h4></div>
 						<p>Repellat autem ipsum explicabo dolores modi facilis cumque, distinctio doloribus iure!</p>
 						<div class="main__tweet--features">
 							<a class="main__like href= # ">
@@ -132,11 +133,11 @@
 						</div>
 					</div>
 					<div class="main__tweet">
-						<div class="main__tweet--pin">
+						<div class="main__tweet--pin ">
 							<i class="fas fa-times"></i>
 						</div>
-						<h4 class="usuario"> Nataly Medina</h4>
-						<h4 class="usuario"> @Natinu</h4>
+						<div class="titulo-user2"><h4 class="usuario"> Nataly Medina @Natinu</h4></div>
+						
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum laborum nostrum non. Optio magni dolor, fugiat hic numquam voluptas. Repellat autem ipsum explicabo dolores modi facilis cumque, distinctio doloribus iure!</p>
 						<div class="main__tweet--features">
 							<a class="main__like href= # ">
@@ -159,25 +160,25 @@
 						<div class="sidebar__seguidores--empresa">
 							<img class=perfil--foto--seguidores src="images/bhp.jpeg">
 							<h5>BHP</h5>
-							<input class="button__twitter--seguir" type="submit" name="crear tweet"></input>
+							<input class="button__twitter--seguir" type="submit" name="crear tweet" value="seguir"></input>
 							<hr>
 						</div>
 						<div class="sidebar__seguidores--empresa">
 							<img class=perfil--foto--seguidores src="images/canal13.jpeg">
 							<h5>CANAL 13</h5>
-							<input class="button__twitter--seguir" type="submit" name="crear tweet"></input>
+							<input class="button__twitter--seguir" type="submit" name="crear tweet"value="seguir"></input>
 							<hr>
 						</div>
 						<div class="sidebar__seguidores--empresa">
 							<img class=perfil--foto--seguidores src="images/ministerio.jpeg">
 							<h5>MINISTERIO</h5>
-							<input class="button__twitter--seguir" type="submit" name="crear tweet"></input>
+							<input class="button__twitter--seguir" type="submit" name="crear tweet" value="seguir"></input>
 							<hr>
 						</div>
 						<div class="sidebar__seguidores--empresa">
 							<img class=perfil--foto--seguidores src="images/bienvenidos.jpeg">
 							<h5>BIENVENIDOS</h5>
-							<input class="button__twitter--seguir" type="submit" name="crear tweet"></input>
+							<input class="button__twitter--seguir" type="submit" name="crear tweet" value="seguir"></input>
 							<hr>
 						</div>
 						<p> © 2018 Twitter 
