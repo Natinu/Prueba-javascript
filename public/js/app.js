@@ -83,6 +83,7 @@ $(document).ready(function () {
 
 		event.preventDefault();
 		$(".main__central").prepend('<div class="main__tweet">' + '<div class="main__tweet--pin">' + '<i class="fas fa-times"></i>' + '</div>' + '<div class="usuario">' + user + '</div>' + text + '<div class="main__tweet--features">' + '<a class="main__like href= # ">' + '<i class="fas fa-heart"></i>' + ' ' + '</a>' + '<div class="main__contador">0</label>' + '</div>' + '</div>' + '</div>' + '</div>');
+		$(".sidebar__form--cajausuario").val('');
 		$(".sidebar__form--cajadetexto").val('');
 		$(".sidebar__form--cajadetexto").focus();
 		e.preventDefault();

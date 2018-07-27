@@ -23,6 +23,7 @@ $(document).ready(function(){
 			+'</div>'
 			+'</div>'
 			+'</div>')
+		$(".sidebar__form--cajausuario").val('');
 		$(".sidebar__form--cajadetexto").val('');
 		$(".sidebar__form--cajadetexto").focus();
 		e.preventDefault();
